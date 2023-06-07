@@ -1,0 +1,86 @@
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ pwd
+/c/Users/biom4/lab-17
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ ls
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/biom4/lab-17/.git/
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git add example.txt
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git commit -m 'added file'
+[master (root-commit) c83f605] added file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 example.txt
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git rm exmple.txt
+fatal: pathspec 'exmple.txt' did not match any files
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git rm example.txt
+rm 'example.txt'
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git commit -m 'removed file'
+[master bce30ef] removed file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 example.txt
+
+biom4@Bayraktar MINGW64 ~/lab-17 (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+biom4@Bayraktar MINGW64 ~/lab-17 (development)
+$ git merge masted devlopment
+merge: masted - not something we can merge
+
+biom4@Bayraktar MINGW64 ~/lab-17 (development)
+$ git status
+On branch development
+nothing to commit, working tree clean
+
+biom4@Bayraktar MINGW64 ~/lab-17 (development)
+$ change log
+Enable, disable, or drain session logins.
+
+CHANGE LOGON {/QUERY | /ENABLE | /DISABLE | /DRAIN | /DRAINUNTILRESTART}
+
+  /QUERY    Query current session login mode.
+  /ENABLE   Enable user login from sessions.
+  /DISABLE  Disable user login from sessions.
+  /DRAIN    Disable new user logons, but allow reconnections to existing sessions.
+  /DRAINUNTILRESTART    Disable new user logons until the server is restarted, but allow reconnections to existing sessions.
+
+biom4@Bayraktar MINGW64 ~/lab-17 (development)
+$ git log
+commit bce30efc2c1375b66e8942ed92849929945f6b1b (HEAD -> development, master)
+Author: VadZlotar <biom4ik123@gmail.com>
+Date:   Wed Jun 7 15:04:45 2023 +0300
+
+    removed file
+
+commit c83f60537d3ac10ad0b365a732da521600b90271
+Author: VadZlotar <biom4ik123@gmail.com>
+Date:   Wed Jun 7 15:03:39 2023 +0300
+
+    added file
+
